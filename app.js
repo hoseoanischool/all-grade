@@ -4,7 +4,7 @@ const ROOMS = ["210호", "106호", "208호"];
 const SEATS_BY_ROOM = {
   "210호": Array.from({ length: 35 }, (_, i) => String(i + 1)),
   "106호": Array.from({ length: 32 }, (_, i) => String(i + 1)),
-  "114호": Array.from({ length: 30 }, (_, i) => String(i + 1)),
+  "208호": Array.from({ length: 36 }, (_, i) => String(i + 1)),
 };
 
 // 고정 좌석 설정
@@ -13,7 +13,7 @@ const fixedSeatsByRoom = {
 },
   "106호": {
 },
-  "114호": {}
+  "208호": {}
 };
 
 // 야작 금지 인원 설정
@@ -22,7 +22,7 @@ const BANNED_USERS = [
 ];
 
 // CSV 복사 기능 관리자 비밀번호
-const ADMIN_PASSWORD = '0415405841-2025-2-0821';
+const ADMIN_PASSWORD = '0415405841-2026-1-0225';
 
 const KST_OFFSET_MIN = 9 * 60; // KST +09:00
 // ===================
@@ -133,7 +133,7 @@ function renderSeats(snapshotVal) {
   const todayKey = ymdKST(nowKST());
   const isPastDate = activeDateKey < todayKey;
 
-  $seatLayout.classList.remove("room-106", "room-210", "room-114", "past-date");
+  $seatLayout.classList.remove("room-106", "room-210", "room-208", "past-date");
   $seatLayout.classList.add(`room-${activeRoom.replace('호', '')}`);
   if (isPastDate) $seatLayout.classList.add("past-date");
 
@@ -376,3 +376,4 @@ renderRoomTabs();
 renderWeekTabs();
 
 attachBookingsListener();
+
