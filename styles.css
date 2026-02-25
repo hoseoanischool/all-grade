@@ -108,8 +108,8 @@ h1, h2 { text-align: center; }
         "seat-31 seat-32 . seat-33 seat-34 . seat-35 .";
 }
 
-/* 114호 전용 그리드 레이아웃 (기본) */
-.seat-container.room-114 {
+/* 208호 전용 그리드 레이아웃 (기본) */
+.seat-container.room-208 {
   grid-template-columns: repeat(6, 80px);
 }
 
@@ -270,4 +270,5 @@ button:hover { background-color: #2980b9; }
   align-items: center; justify-content: space-between;
   border-bottom: 1px dashed #eee; padding: 8px 0;
 }
+
 .res-item:last-child { border-bottom: 0; }
