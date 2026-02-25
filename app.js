@@ -1,5 +1,5 @@
 // ====== 설정 ======
-const ROOMS = ["210호", "106호", "114호"];
+const ROOMS = ["210호", "106호", "208호"];
 
 const SEATS_BY_ROOM = {
   "210호": Array.from({ length: 35 }, (_, i) => String(i + 1)),
@@ -10,24 +10,8 @@ const SEATS_BY_ROOM = {
 // 고정 좌석 설정
 const fixedSeatsByRoom = {
   "210호": {
-"1": "이채은",
-"7": "김지선",
-"9": "자나라",
-"10": "최수인",
-"11": "이현두",
-"12": "임호빈",
-"13": "전가람",
-"17": "장수선",
-"18": "임소연",
-"19": "이수빈",
-"20": "장아라",
-"24": "박소윤",
-"25": "박지혜",
-"27": "장시은",
-"28": "이현아",
 },
   "106호": {
-"14": "김정민"
 },
   "114호": {}
 };
@@ -390,4 +374,5 @@ $confirmationCloseBtn.onclick = closeConfirmationModal;
 
 renderRoomTabs();
 renderWeekTabs();
+
 attachBookingsListener();
