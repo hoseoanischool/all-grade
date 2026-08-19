@@ -2,7 +2,7 @@
 const ROOMS = ["210호", "106호", "208호"];
 
 const SEATS_BY_ROOM = {
-  "210호": Array.from({ length: 35 }, (_, i) => String(i + 1)),
+  "210호": Array.from({ length: 36 }, (_, i) => String(i + 1)),
   "106호": Array.from({ length: 32 }, (_, i) => String(i + 1)),
   "208호": Array.from({ length: 36 }, (_, i) => String(i + 1)),
 };
