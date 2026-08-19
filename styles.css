@@ -98,14 +98,14 @@ h1, h2 { text-align: center; }
 
 /* 210호 전용 그리드 레이아웃 */
 .seat-container.room-210 {
-    grid-template-columns: repeat(6, 80px);
+    grid-template-columns: repeat(8, 80px);
     grid-template-areas:
         "seat-1 seat-2 . seat-3 seat-4 . seat-5 seat-6"
         "seat-7 seat-8 . seat-9 seat-10 . seat-11 seat-12"
         "seat-13 seat-14 . seat-15 seat-16 . seat-17 seat-18"
         "seat-19 seat-20 . seat-21 seat-22 . seat-23 seat-24"
         "seat-25 seat-26 . seat-27 seat-28 . seat-29 seat-30"
-        "seat-31 seat-32 . seat-33 seat-34 . seat-35 .";
+        "seat-31 seat-32 . seat-33 seat-34 .seat-35 seat-36";
 }
 
 /* 208호 전용 그리드 레이아웃 (기본) */
@@ -208,6 +208,7 @@ h1, h2 { text-align: center; }
 .room-210 .seat[data-seat-number="33"] { grid-area: seat-33; }
 .room-210 .seat[data-seat-number="34"] { grid-area: seat-34; }
 .room-210 .seat[data-seat-number="35"] { grid-area: seat-35; }
+.room-210 .seat[data-seat-number="36"] { grid-area: seat-36; }
 
 
 .seat strong { display: block; font-size: 16px; margin-bottom: 2px; }
